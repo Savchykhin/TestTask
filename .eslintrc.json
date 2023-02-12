@@ -1,0 +1,26 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "plugin:cypress/recommended",
+        "plugin:chai-friendly/recommended",
+        "prettier"
+    ],
+    "plugins": [
+        "cypress",
+        "chai-friendly",
+        "prettier"
+    ],
+    "env": {
+        "cypress/globals": true,
+        "es6": true,
+        "node": true
+    },
+    "rules": {
+        "prettier/prettier": [
+            "error",
+            {
+                "singleQuote": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "cypress-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open:prod": "cypress open --config-file cypress.prod.config.js",
+    "cy:run:prod": "cypress run --config-file cypress.prod.config.js",
+    "lint": "eslint --fix --ext .js .",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Savchykhin/cypress-task.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Savchykhin/cypress-task/issues"
+  },
+  "homepage": "https://github.com/Savchykhin/cypress-task#readme",
+  "devDependencies": {
+    "cypress": "^12.5.1",
+    "defu": "^6.1.2",
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-chai-friendly": "^0.7.2",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3"
+  }
+}
