@@ -6,7 +6,7 @@
   "scripts": {
     "cy:open:prod": "cypress open --config-file cypress.prod.config.js",
     "cy:run:prod": "cypress run --config-file cypress.prod.config.js",
-    "lint": "eslint --fix --ext .js .",
+    "lint": "eslint --max-warnings=0 --ext js cypress/",
     "prepare": "husky install"
   },
   "repository": {

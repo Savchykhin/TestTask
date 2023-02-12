@@ -12,8 +12,7 @@
     ],
     "env": {
         "cypress/globals": true,
-        "es6": true,
-        "node": true
+        "es2021": true
     },
     "rules": {
         "prettier/prettier": [
@@ -22,5 +21,10 @@
                 "singleQuote": true
             }
         ]
-    }
+    },
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "ignorePatterns": ["support/index.ts"]
 }

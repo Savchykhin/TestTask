@@ -1,4 +1,10 @@
+// @ts-check
+/// <reference types="cypress" />
+/// <reference path='../../support/index.ts' />
+
 class LoginPage {
+  loginUrl = '/qa-portal/registerlogin/registerlogin.php';
+
   get emailInput() {
     return cy.get('input[name=username]');
   }
@@ -24,7 +30,7 @@ class LoginPage {
   }
 
   goToLogin() {
-    cy.visit('/qa-portal/registerlogin/registerlogin.php');
+    cy.visit(this.loginUrl);
   }
 
   fillUsername(value) {
