@@ -17,12 +17,16 @@ class LoginPage {
     return cy.get('input[type=submit]');
   }
 
+  get errorList() {
+    return cy.get('.has-error');
+  }
+
   get usernameError() {
-    return cy.get('.has-error').eq(0);
+    return this.errorList.eq(0);
   }
 
   get passwordError() {
-    return cy.get('.has-error').eq(1);
+    return this.errorList.eq(1);
   }
 
   get title() {

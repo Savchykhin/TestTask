@@ -1,9 +1,7 @@
 /// <reference types="cypress" />
 
-export { };
-declare global {
-    namespace Cypress {
-        interface Chainable {
-        }
+namespace Cypress {
+    interface Chainable {
+        //type global commands here
     }
 }
